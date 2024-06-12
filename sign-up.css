@@ -109,6 +109,7 @@ input[type="password"] {
    box-sizing: border-box;
    margin: auto;
    text-align: left;
+  
    
    }
    
@@ -121,16 +122,18 @@ button {
        font-size: 16px;
    }
 button:hover {
-    background-color: #27b7c9;
+    background-color: #27bace;
 }
 
 .right-button button {
     background-color: transparent;
-    color: blue;
+    color: rgb(19, 19, 231);
     border: none; 
     padding: 0;
     text-align: right;
     cursor: pointer;
+        
+    
 }
 
 .right-button button:hover {
@@ -140,4 +143,6 @@ button:hover {
 .center-button button {
     background-color: blue;
     border-radius: 20px; 
+    cursor: pointer;
+    
 }
