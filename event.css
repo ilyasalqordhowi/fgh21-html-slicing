@@ -407,9 +407,9 @@ label {
 .date-grid {
     display: flex;
     gap: 20px;
-    margin: auto; /* Mengatur margin otomatis */
-    max-width: 800px; /* Menetapkan lebar maksimum */
-    justify-content: center; /* Memastikan elemen diposisikan di tengah */
+    margin: auto; 
+    max-width: 800px; 
+    justify-content: center; 
 }
 
 .date-grid > div div:first-child {
