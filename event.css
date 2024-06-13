@@ -30,6 +30,7 @@ body.singup {
     background-size: cover; 
     background-position: left; 
 }
+
 .right {
     display: flex;
     align-items: center;
@@ -122,13 +123,33 @@ button {
        cursor: pointer;
        font-size: 16px;
    }
+   .navigasi .nav-button button:first-child{
+    border: none;
+    background-color: transparent;
+    color: black;
+    width: 169px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: auto;
+    cursor: pointer;
+   }
+   .navigasi .nav-button button:last-child{
+    border: none;
+    background-color: #3366FF;
+    width: 169px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: auto;
+    cursor: pointer;
+    
+   }
 button:hover {
     background-color: #27bace;
 }
 
 .right-button button {
     background-color: transparent;
-    color: rgb(19, 19, 231);
+    color: rgb(104, 104, 233);
     border: none; 
     padding: 0;
     text-align: right;
@@ -150,7 +171,8 @@ button:hover {
 
 .body-event{
     background-color:#F4F7FF;
-    ;
+    margin: auto;
+    
 }
 .navigasi {
     display: flex;
@@ -160,6 +182,8 @@ button:hover {
     background-color: white;
     width: 100%;
     height: 100%;
+    margin: auto;
+   
 }
 .logo {
     display: flex;
@@ -183,7 +207,7 @@ button:hover {
    gap: 0;
    margin-left: 120px;
    margin-top: 50px;
-   margin-right: 10px;
+   margin-right: 100px;
    padding: 100px;
    background-color:white;
    height: 700px;
@@ -337,3 +361,67 @@ button{
   opacity: 0px;
   color:#C1C5D0;
   }
+  .image-column {
+    background-image: url('./assets/Group\ 12.png');
+    width: 549.48px;
+    height: 478.36px;
+    
+   
+}
+.contain {
+    display: flex; 
+    width: 1366px;
+    height: 750px;
+    gap: 0px;
+    opacity: 0px;
+    justify-content: right;
+    margin-bottom: 20px;
+    background-color: #007bff;
+}
+.additional-contain {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+label {
+    display: block;
+    background-color: white; 
+    border-radius: 10px; 
+    padding: 5px; 
+    border: none;
+    font-weight: bold;
+}
+
+.event button {
+    background-color: pink;
+    border: 1px solid pink;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.event button:hover {
+    background-color: lightpink;
+}
+.date-grid {
+    display: flex;
+    gap: 20px;
+    margin: auto; /* Mengatur margin otomatis */
+    max-width: 800px; /* Menetapkan lebar maksimum */
+    justify-content: center; /* Memastikan elemen diposisikan di tengah */
+}
+
+.date-grid > div div:first-child {
+    text-align: center;
+}
+
+.date-grid .active {
+    border: 1px solid gold;
+    color: gold;
+    border-radius: 20px;
+}
+.date-grid .active::after{
+    content: "\25CF";
+    text-align: center;
+}
