@@ -27,6 +27,8 @@ body {
 @media (max-width:991px) {
     .navigasi{
      flex-direction: column;
+     width: 100%;
+     overflow: hidden;
      height: unset;
      padding: 20px;
      gap: 10px;
@@ -38,6 +40,7 @@ body {
         width: 100%;
         justify-content: space-between;
         align-items: center;
+        gap: auto;
     }
     .navigasi >.main > div:last-child{
         display: unset;
@@ -55,6 +58,43 @@ body {
     .navigasi .nav-button button{
         width: 100%!important;
     }
+    .contain{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+   .date-grid{
+    width: 300.5px;
+    height: 75px;
+   }
+   .event-list{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+   }
+   .grid{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .additional-contain2{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+   }
+   .list-contain{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+   }
+   .grid-container{
+    display: grid;
+   }
+   
 }
 
 #menu-button{
@@ -512,6 +552,7 @@ label {
 }
 
 .event button {
+    color: red;
     background-color: pink;
     border: 1px solid #FF3D71;
     border-radius: 30px;
@@ -843,8 +884,8 @@ label {
     text-align: center;
 
 }
-
 .event2 button {
+    color: red;
     background-color: pink;
     border: 1px solid #FF3D71;
     border-radius: 30px;
@@ -853,6 +894,7 @@ label {
     margin: 10px 0;
     width: 150px;
     height: 30px;
+    border: 1px black;
 
 }
 
