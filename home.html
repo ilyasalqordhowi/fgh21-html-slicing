@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>HOME</title>
     <title>Event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="event.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +14,16 @@
 </head>
 
 <body class="body-event">
-    <div class="navigasi">
+    <nav  id="nav" class="navigasi">
+       <div class="main">
         <div class="logo">
             <img src="./assets/wetick.png" alt="logo wetick" class="image">
             <span class="blue">We</span><span class="red">Tick</span>
         </div>
+       <div>
+        <button id="menu-button" ></button>
+       </div>
+    </div>
         <div>
             <ul class="list-link">
                 <li>Home</li>
@@ -30,7 +35,29 @@
             <button type="button">Login</button>
             <button type="button">Sing Up</button>
         </div>
-    </div>
+    </nav>
+    <script>
+        const menuBtn = document.getElementById('menu-button')
+        const nav = document.getElementById('nav')
+        const navCenter  = nav.getElementsByClassName('list-link').item(0)
+        const navRight = nav.getElementsByClassName('nav-button').item(0)
+        menuBtn.onclick = () =>{
+          if (navCenter.getAttribute ('style')) {
+            navCenter.removeAttribute('style')
+          }else{
+            navCenter.setAttribute('style','display:none;')
+          }
+          if (navRight.getAttribute ('style')) {
+            navRight.removeAttribute('style')
+          }else{
+            navRight.setAttribute('style','display:none;')
+          }
+          
+            //
+        }
+        
+       
+    </script>
     <div class="contain">
         <div class="image-people"></div>
     </div>

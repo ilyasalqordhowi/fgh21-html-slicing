@@ -21,23 +21,51 @@ body {
     height: 90px;
     padding: 0 50px;
 }
-@media (min-width:200px) and (max-width:767px) {
+.navigasi > .main > div:last-child{
+    display: none;
+}
+@media (max-width:991px) {
     .navigasi{
-        display: table-column;
-        width: auto;
+     flex-direction: column;
+     height: unset;
+     padding: 20px;
+     gap: 10px;
+     position: sticky;
+     top: 0;
+    }
+    .navigasi >.main{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
         align-items: center;
     }
-    .contain{
-        width: auto;
-        margin-top: 100px;
+    .navigasi >.main > div:last-child{
+        display: unset;
     }
-}
-@media (min-width:768px) and (max-width:991px) {
-    .navigasi{
-        display: table-column;
+    .navigasi .list-link{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navigasi .nav-button{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+    .navigasi .nav-button button{
+        width: 100%!important;
     }
 }
 
+#menu-button{
+    width: 24px ;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+    background-image: url(./assets/heroicons-outline_menu.png);
+}
 .logo {
     display: flex;
     align-items: center;
