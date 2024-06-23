@@ -1229,71 +1229,60 @@ padding: 2px 3px;
     margin-bottom: 20px;
     color: #FC1055;
     margin-left: 20px;
+    margin-right: 13px;
 
 }
 
 .logo2 {
     background-color: #ffffff;
-    background-image: url(./assets/logo.png);
+    background-image: url(./assets/logo1.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 45px;
     height: 45px;
-    top: 1635px;
-    left: 613px;
     gap: 1105px;
     border-radius: 10px;
     opacity: 0px;
     box-shadow: 0px 2px 15px 0px #1A3C4414;
-    margin-left: 15px;
 }
 
 .logo3 {
     background-color: #F1EAFF;
+    background-image: url(./assets/logo2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    gap: 1105px;
+    border-radius: 10px;
+    opacity: 0px;
+    box-shadow: 0px 2px 15px 0px #1A3C4414;
+}
+
+.logo4 {
+    background-color: #FFEAEF;
     background-image: url(./assets/logo3.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 45px;
     height: 45px;
-    top: 1635px;
-    left: 613px;
     gap: 1105px;
     border-radius: 10px;
     opacity: 0px;
     box-shadow: 0px 2px 15px 0px #1A3C4414;
-    margin-left: 15px;
 }
 
-.logo4 {
-    background-color: #FFEAEF;
+.logo5 {
+    background-color: #FFF4E7;
     background-image: url(./assets/logo4.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 45px;
     height: 45px;
-    top: 1635px;
-    left: 613px;
     gap: 1105px;
     border-radius: 10px;
     opacity: 0px;
     box-shadow: 0px 2px 15px 0px #1A3C4414;
-    margin-left: 15px;
-}
-
-.logo5 {
-    background-color: #FFF4E7;
-    background-image: url(./assets/logo5.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 45px;
-    height: 45px;
-    top: 1635px;
-    left: 613px;
-    gap: 1105px;
-    border-radius: 10px;
-    opacity: 0px;
-    box-shadow: 0px 2px 15px 0px #1A3C4414;
-    margin-left: 15px;
 }
 .border{
     border-top-style: outset;
@@ -1800,20 +1789,7 @@ font-size: 14px;
     border: 2px solid #3366FF;
 }
 
-.card-profile {
-    display: flex;
-    background-color: white;
-    width: 925px;
-    height:800px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 0px 2px 15px 0px #1A3C4414;
-    gap: 0;
-    margin-top: 50px;
-    margin-right: 100px;
-    padding: 100px;
-    background-color: white;
-}
+
 .content3 nav ul {
     padding-left: 10px;
 }
@@ -1827,7 +1803,6 @@ font-size: 14px;
 .content3 nav ul li a {
     text-decoration: none;
 }
-
 .inside-list ul {
     margin: 30px 0 0 30px;
     padding-left: 10px;
@@ -1853,13 +1828,170 @@ font-size: 14px;
     height: 2px;
     background-color: #000;
 }
-
 .content3 .line-border {
     width: 1px;
     height: 50vh;
     background-color: #000;
     border: 1px solid #000;
 }
-.right-left{
-    margin: 50px 50px;
+
+.card-profile {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 825px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px 0px #1A3C4414;
+    gap: 0;
+    margin-top: 50px;
+    padding: 46px 50px;
+}
+.left-profile{
+    width: 468px;
+    height: auto;
+}
+.left-profile h1{
+    font-family: 'Poppins','bold';
+    font-size: 20px;
+    margin: 46px 0 50px 50px;
+}
+.identity{
+    display: flex;
+    margin: 46px 0 50px 50px;
+    gap: 50%;
+    width:262px;
+}
+.identity-filling{
+    size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+}
+input[type="name-identity"] {
+    width: 50%px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: left;
+}
+.Username-identity{
+    display: flex;
+    gap: 15px;
+    font-family: 'Poppins';
+    color: #777777;
+}
+.Email-identity{
+    display: flex;
+    gap: 15px;
+    font-family: 'Poppins';
+    color: #777777;
+}
+.Phone-identity{
+    display: flex;
+    gap: 15px;
+    font-family: 'Poppins';
+    color: #777777;
+}
+.identity1{
+    display: flex;
+    margin: 46px 0 50px 50px;
+    gap: 70px;
+    width: 307px;
+}
+.male-female{
+    display: flex;
+    color: #777777;
+    gap: 10px;
+    font-family: "Poppins";
+    font-size: 14px;
+}
+.male-round-active a{
+    color: #007bff;
+}
+.male-round a{
+    color: #777777;
+}
+.gender{
+    display: flex;
+    gap: 20px;
+    width:262px;
+}
+
+input[type="identity-profession"] {
+        width: 60%px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: auto;
+        text-align: left;
+        background-image: url(./assets/arrow-bottom.png);
+        background-repeat: no-repeat;
+        background-position: right;
+}
+input[type="identity-nationality"] {
+    width: 60%px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: left;
+    background-image: url(./assets/arrow-bottom.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.identity2{
+    display: flex;
+    margin: 46px 0 33px 50px;
+    gap: 50%;
+    width:262px;
+}
+.identity3{
+    display: flex;
+    margin: 0 0 16px 50px;
+    gap: 50%;
+    width:262px;
+}
+.identity4{
+    display: flex;
+    margin: 0 0 33px 50px;
+    gap: 50%;
+    width:262px;
+}
+.identity5{
+    display: flex;
+    margin: 0 0 50px 50px;
+    gap: 50%;
+    width:262px;
+}
+.profile3{
+    border-left-style: solid;
+    border-color: #C1C5D040;
+    margin-top:125px;
+}
+button.profile2{
+    background-image: url(./assets/sidebar9.png);
+    background-repeat: no-repeat;
+    background-color:transparent;
+    margin-top: 0;
+    height: 145px;
+    width: 200px;
+    margin-left: 109px;
+}
+.Choose-photo{
+    font-family: "Poppins";
+    font-size: 14px;
+   text-align: center;
+}
+.Choose-photo button{
+    margin: 50px 53px 25px 50px;
+    color: #007bff;
+    background-color: transparent;
+    border: 1px solid #007bff;
 }
