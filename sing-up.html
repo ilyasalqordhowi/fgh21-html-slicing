@@ -19,18 +19,23 @@
         <h1>Sign Up</h1>
         <span class="account">Already have an account?<span class="blue">Log in</span>
         <form>
+            <form onsubmit="calc(event)">
             <div class="form-row">
                 <div class="form-group">
-                    <input type="text" id="Full Name" placeholder="Full Name">
+                    <label for="num1"></label>
+                    <input type="text" name="num1" id="Full Name" placeholder="Full Name">
                 </div>
-                <div class="form-group">               
-                    <input type="text" id="Email" placeholder="Email">
+                <div class="form-group">
+                    <label for="num2"></label>               
+                    <input type="text" name="num2" id="Email" placeholder="Email">
                 </div>
-                <div class="form-group">   
-                    <input type="password" id="password" placeholder="Password">
+                <div class="form-group"> 
+                    <label for="num3"></label> 
+                    <input type="password" name="num3" id="password" placeholder="Password">
                 </div>
-                <div class="form-group">   
-                    <input type="password" id="password" placeholder="Confrim Password">
+                <div class="form-group">
+                    <label for="num4"></label>   
+                    <input type="password" name="num4" id="password" placeholder="Confrim Password">
                 </div>
                 <div class="form-group right-button">
                     <input type="checkbox" id="Accept terms and condition" name="keep-signed-up">
@@ -40,8 +45,19 @@
                     <button type="submit" value="Submit">Sign Up</button>
                 </div>
             </div>
+        </form>
             </div>
         </form>
-    </div>
+ 
+    <script>
+        function calc(event){
+            event.preventDefault()
+            const num1 = document.getElemetById("Full Name").value
+            const num2 = document.getElementById("Email").value
+            const num3 = document.getElemetById("Password").value
+            const num4 = document.getElementById("Confrim Password").value
+            console.log(num1+num2)
+        }
+    </script>
 </body>
 </html>
