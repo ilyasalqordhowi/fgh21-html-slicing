@@ -104,7 +104,7 @@ body {
     border: none;
     border-radius: 0;
     margin-top: 0;
-    background-image: url(./assets/menu.png);
+    background-image: url(./asse/icon/menu.png);
 }
 .logo {
     display: flex;
@@ -166,7 +166,7 @@ body.singup {
     overflow: hidden;
     margin-bottom: 20px;
     background-color: #3366FF;
-    background-image: url('./assets/home1.png');
+    background-image: url(./assets/image/home1.png);
     background-size: cover;
     background-position: left;
 }
