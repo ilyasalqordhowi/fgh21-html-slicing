@@ -166,11 +166,10 @@ body.singup {
     overflow: hidden;
     margin-bottom: 20px;
     background-color: #3366FF;
-    background-image: url(./assets/image/home1.png);
+    background-image: url('../image/home1.png');
     background-size: cover;
     background-position: left;
 }
-
 .right {
     display: flex;
     align-items: center;
