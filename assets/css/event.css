@@ -82,71 +82,17 @@ body {
         height: auto;
         overflow: hidden;
     }
-    .list-contain {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
     
-
-    
-    .contain2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .partner {
-        text-align: center;
-        margin-bottom: 40px;
-        width: 100%;
-        height: auto;
-    }
-    
-    .partner .event3 button {
-        background-color: transparent;
-        color: #FFFFFF;
-        border: 1px solid #FFFFFF;
-        padding: 10px 20px;
-        border-radius: 20px;
-        font-size: 14px;
-        cursor: pointer;
-    }
-    
-    .partner .event3 label {
-        font-size: 24px;
-        font-weight: bold;
-        display: block;
-        margin: 10px 0;
-    }
-    
-    .partner .event3 p {
-        font-size: 16px;
-        margin: 10px 0;
-    }
     
     .kategori {
-        display: flex;
+        display: flex !important;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        justify-content: center !important;
+        gap: 10px !important;
+        width: auto !important;
     }
-    
-    .kategori div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        padding: 10px;
     }
-    
-    .kategori div img {
-        max-width: 80px;
-        height: auto;
-        display: block;
-    }
+
     .grid {
         width: 100%;
         height: auto;
@@ -181,7 +127,7 @@ body {
         display: grid !important;
         width: 100%;
     }
-}
+
 
 #menu-button {
     width: 24px;
