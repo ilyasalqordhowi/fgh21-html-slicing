@@ -25,7 +25,7 @@ body {
 .navigasi>.main>div:last-child {
     display: none;
 }
-
+/* media quary home */
 @media (max-width:991px) {
     .navigasi {
         flex-direction: column;
@@ -114,7 +114,10 @@ body {
     .list-contain{
         flex-wrap: wrap;
     }
-
+    #footer {
+        display: grid;
+        width: 100%;
+    }
 }
 
 #menu-button {
@@ -498,9 +501,9 @@ button {
     padding-left: 100px;
     margin: 0;
 }
-footer {
+#footer {
     display: flex;
-    margin-left: 125px;
+    width: 100%;
     gap: 125px;
     justify-content: space-between;
     background-color: #F4F7FF;
