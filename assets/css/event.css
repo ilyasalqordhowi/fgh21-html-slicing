@@ -83,7 +83,15 @@ body {
         overflow: hidden;
     }
     
-    
+    .contain2{
+        height: 650px !important;
+
+    }
+    .partner{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0px !important;
+    }
     .kategori {
         display: flex !important;
         flex-wrap: wrap;
