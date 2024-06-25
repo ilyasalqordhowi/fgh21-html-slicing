@@ -71,7 +71,9 @@ body {
         height: auto;
         overflow: hidden;
     }
-
+    .button-arrow-responsive {
+        display: flex !important;
+    }
     .date-grid {
         width: 300.5px;
         height: 75px;
@@ -99,19 +101,11 @@ body {
         gap: 10px !important;
         width: auto !important;
     }
-    }
-
-    .grid {
+    #footer {
+        display: grid !important;
         width: 100%;
-        height: auto;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     
-    
-
     .additional-contain2 {
         width: 100%;
         height: auto;
@@ -125,16 +119,24 @@ body {
     .grid-container {
         display: inline!important;
     }
-    .button-arrow-responsive{
-        display: flex !important;
-    }
     .list-contain{
         flex-wrap: wrap;
     }
-    #footer {
-        display: grid !important;
+    .grid {
         width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    
+    }
+
+
+    
+
+    
 
 
 #menu-button {
