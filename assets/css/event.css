@@ -260,12 +260,12 @@ form {
     margin-top: 300px;
 }
 
-input[type="text"]::placeholder,
+input[type="name"]::placeholder,
 input[type="password"]::placeholder {
     opacity: 0.5;
 }
 
-input[type="text"],
+input[type="name"],
 input[type="password"] {
     width: 75%;
     padding: 10px;
@@ -274,9 +274,21 @@ input[type="password"] {
     box-sizing: border-box;
     margin: auto;
     text-align: left;
+}
+input[type="Email"]::placeholder,
+input[type="confrimPassword"]::placeholder {
+    opacity: 0.5;
+}
 
-
-
+input[type="Email"],
+input[type="confirmPassword"] {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: left;
 }
 
 button {
@@ -488,6 +500,8 @@ button {
 }
 footer {
     display: flex;
+    margin-left: 125px;
+    gap: 125px;
     justify-content: space-between;
     background-color: #f8f8f8;
     padding: 20px;
@@ -718,6 +732,10 @@ label {
 
 .event-box .event-text .people {
     display: flex;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        
 }
 
 .event-box .event-text .people div {
@@ -753,15 +771,20 @@ label {
 
 
 }
-
-.event-box .event-text .people div img {
+.people img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+/* .event-box .event-text .people div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 .event-list {
-    width: 100%;
+    width: 1200px;
     position: relative;
     display: flex;
     gap: 10px;

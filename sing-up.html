@@ -19,49 +19,51 @@
         <h1>Sign Up</h1>
         <span class="account">Already have an account?<span class="blue">Log in</span>
         <form>
-            <form onsubmit="calc(event)">
+           
             <div class="form-row">
+                <form id="auth-login">
                 <div class="form-group">
-                    <label for="num1"></label>
-                    <input type="text" name="num1" id="Full Name" placeholder="Full Name">
+                    <label for="name"></label>
+                    <input type="name" name="name" id="Full Name" placeholder="Full Name">
                 </div>
                 <div class="form-group">
-                    <label for="num2"></label>               
-                    <input type="text" name="num2" id="Email" placeholder="Email">
+                    <label for="Email"></label>               
+                    <input type="Email" name="Email" id="Email" placeholder="Email">
                 </div>
                 <div class="form-group"> 
-                    <label for="num3"></label> 
-                    <input type="password" name="num3" id="password" placeholder="Password">
+                    <label for="password"></label> 
+                    <input type="password" name="password" id="password" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for="num4"></label>   
-                    <input type="password" name="num4" id="password" placeholder="Confrim Password">
+                    <label for="confirmPassword"></label>   
+                    <input type="password" name="confirmPassword" id="password" placeholder="Confrim Password">
                 </div>
                 <div class="form-group right-button">
                     <input type="checkbox" id="Accept terms and condition" name="keep-signed-up">
                     <button type="ceckbox" value=" Password">Accept terms and condition</button>
                 </div>
                 <div class="form-group center-button">
-                    <button type="submit" value="Submit">Sign Up</button>
+                    <button type="submit">Sign Up</button>
                 </div>
+                </form>
+                <script>
+                    const authLoginFrom = document.getElementById("auth-login")
+              
+                    authLoginFrom.onsubmit = (event) => {
+                      event.preventDefault()
+                      const name = event.target.name.value;
+                      const Email = event.target.Email.value;
+                      const password = event.target.password.value;
+                      const confirmPassword = event.target.confirmPassword.value;
+                      window.alert("your name is"+name+"your email is"+Email+"your password is"+password+"and your is confirm password"+ConfirmPassword)
+                    }
+                  </script>
             </div>
         </form>
+      
             </div>
         </form>
  
-    <script>
-        function calc(event){
-            event.preventDefault()
-            const num1 = document.getElemetById("Full Name").value
-            const num2 = document.getElementById("Email").value
-            const num3 = document.getElemetById("Password").value
-            const num4 = document.getElementById("Confrim Password").value
-            console.log(num1)
-            console.log(num2)
-            console.log(num3)
-            console.log(num4)
-
-        }
-    </script>
+      
 </body>
 </html>

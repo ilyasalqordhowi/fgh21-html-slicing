@@ -87,7 +87,117 @@
                     <div>Fri</div>
                 </div>
             </div>
-            <div class="event-list">
+            <div class="event-list" id="event-list"></div>
+            <script>
+                const eventData = [
+    {
+        date: 'Wed, 15 Nov, 4:00 PM',
+        title: 'Sights & Sounds Exhibition',
+        image: './assets/image/film1.png',
+        people: [
+            './assets/image/people1.png',
+            './assets/image/people2.png',
+            './assets/image/people3.png',
+            './assets/image/people4.png'
+        ]
+    },
+    {
+        date: 'Thu, 16 Nov, 7:00 PM',
+        title: 'See it in Gold Class',
+        image: './assets/image/film2.png',
+        people: [
+            './assets/image/people1.png',
+            './assets/image/people2.png',
+            './assets/image/people3.png',
+            './assets/image/people4.png'
+        ]
+    },
+    {
+        date: 'Wed, 15 Nov, 4:00 PM',
+        title: 'Sights & Sounds Exhibition',
+        image: './assets/image/film1.png',
+        people: [
+            './assets/image/people1.png',
+            './assets/image/people2.png',
+            './assets/image/people3.png',
+            './assets/image/people4.png'
+        ]
+    },
+    {
+        date: 'Thu, 16 Nov, 7:00 PM',
+        title: 'See it in Gold Class',
+        image: './assets/image/film2.png',
+        people: [
+            './assets/image/people1.png',
+            './assets/image/people2.png',
+            './assets/image/people3.png',
+            './assets/image/people4.png'
+        ]
+    },
+    {
+        date: 'Wed, 15 Nov, 4:00 PM',
+        title: 'Sights & Sounds Exhibition',
+        image: './assets/image/film1.png',
+        people: [
+            './assets/image/people1.png',
+            './assets/image/people2.png',
+            './assets/image/people3.png',
+            './assets/image/people4.png'
+        ]
+    },
+    {
+        date: 'Thu, 16 Nov, 7:00 PM',
+        title: 'See it in Gold Class',
+        image: './assets/image/film2.png',
+        people: [
+            './assets/image/people1.png',
+            './assets/image/people2.png',
+            './assets/image/people3.png',
+            './assets/image/people4.png'
+        ]
+    },
+
+];
+
+const eventList = document.getElementById('event-list');
+
+eventData.forEach(event => {
+    const eventBox = document.createElement('div');
+    eventBox.className = 'event-box';
+
+    const eventImage = document.createElement('img');
+    eventImage.src = event.image;
+    eventImage.alt = event.title;
+    eventBox.appendChild(eventImage);
+
+    const eventText = document.createElement('div');
+    eventText.className = 'event-text';
+
+    const eventTeks = document.createElement('div');
+    eventTeks.className = 'event-teks';
+    const eventDate = document.createElement('div');
+    eventDate.textContent = event.date;
+    const eventTitle = document.createElement('div');
+    eventTitle.textContent = event.title;
+    eventTeks.appendChild(eventDate);
+    eventTeks.appendChild(eventTitle);
+    eventText.appendChild(eventTeks);
+
+    const peopleDiv = document.createElement('div');
+    peopleDiv.className = 'people';
+    event.people.forEach(person => {
+        const personImg = document.createElement('img');
+        personImg.src = person;
+        personImg.alt = 'person';
+        peopleDiv.appendChild(personImg);
+    });
+    eventText.appendChild(peopleDiv);
+
+    eventBox.appendChild(eventText);
+    eventList.appendChild(eventBox);
+});
+            </script>
+            <!-- <div class="event-list">
                 <div class="event-box">
                     <img src="./assets/image/film1.png" alt="Event 1" />
                     <div class="event-text">
@@ -203,7 +313,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="arrow">
             <button class="arr-left"></button>
@@ -441,7 +551,7 @@
         </div>
 
         <footer id="footer"></footer>
-        <script src="footer.js"></script>
+        <script src="./assets/javascript/footer.js"></script>
         <!-- <div>
             <div class="footer-text-title">Wetick</div>
             <div class="footer-text">About us</div>
