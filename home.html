@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>HOME</title>
     <title>Event</title>
@@ -12,17 +13,18 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body class="body-event">
-    <nav  id="nav" class="navigasi">
-       <div class="main">
-        <div class="logo">
-            <img src="./assets/image/wetick.png" alt="logo wetick" class="image">
-            <span class="blue">We</span><span class="red">Tick</span>
+    <nav id="nav" class="navigasi">
+        <div class="main">
+            <div class="logo">
+                <img src="./assets/image/wetick.png" alt="logo wetick" class="image">
+                <span class="blue">We</span><span class="red">Tick</span>
+            </div>
+            <div>
+                <button id="menu-button"></button>
+            </div>
         </div>
-       <div>
-        <button id="menu-button" ></button>
-       </div>
-    </div>
         <div>
             <ul class="list-link">
                 <li>Home</li>
@@ -38,20 +40,20 @@
     <script>
         const menuBtn = document.getElementById('menu-button')
         const nav = document.getElementById('nav')
-        const navCenter  = nav.getElementsByClassName('list-link').item(0)
+        const navCenter = nav.getElementsByClassName('list-link').item(0)
         const navRight = nav.getElementsByClassName('nav-button').item(0)
-        menuBtn.onclick = () =>{
-          if (navCenter.getAttribute ('style')) {
-            navCenter.removeAttribute('style')
-          }else{
-            navCenter.setAttribute('style','display:none;')
-          }
-          if (navRight.getAttribute ('style')) {
-            navRight.removeAttribute('style')
-          }else{
-            navRight.setAttribute('style','display:none;')
-          }
-         
+        menuBtn.onclick = () => {
+            if (navCenter.getAttribute('style')) {
+                navCenter.removeAttribute('style')
+            } else {
+                navCenter.setAttribute('style', 'display:none;')
+            }
+            if (navRight.getAttribute('style')) {
+                navRight.removeAttribute('style')
+            } else {
+                navRight.setAttribute('style', 'display:none;')
+            }
+
         }  
     </script>
     <div class="contain">
@@ -419,7 +421,6 @@
             </div>
         </div>
     </div>
-
     </div>
 </body>
 <footer>
@@ -438,7 +439,62 @@
                 <i class="fa fa-twitter"></i>
             </div>
         </div>
-        <div>
+
+        <footer id="footer"></footer>
+
+        <script>
+            const footerData = [
+                {
+                    title: 'Wetick',
+                    items:
+                        ['About us',
+                            'Features',
+                            'Blog',
+                            'Payments',
+                            'Mobile App'
+                        ]
+                },
+                {
+                    title: 'Features',
+                    items: ['Booking',
+                            'Create Event',
+                            'Discover',
+                            'Register'
+                        ]
+                },
+                {
+                    title: 'Company',
+                    items: ['Partnership',
+                            'Help',
+                            'Terms Of Service',
+                            'Privacy Policy',
+                            'Sitemap'
+                        ]
+                }
+            ];
+
+            const footer = document.getElementById('footer');
+
+            footerData.forEach(section => {
+                const sectionDiv = document.createElement('div');
+                sectionDiv.className = 'footer-section';
+
+                const titleDiv = document.createElement('div');
+                titleDiv.className = 'footer-text-title';
+                titleDiv.textContent = section.title;
+                sectionDiv.appendChild(titleDiv);
+
+                section.items.forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = 'footer-text';
+                    itemDiv.textContent = item;
+                    sectionDiv.appendChild(itemDiv);
+                });
+
+                footer.appendChild(sectionDiv);
+            });
+        </script>
+        <!-- <div>
             <div class="footer-text-title">Wetick</div>
             <div class="footer-text">About us</div>
             <div class="footer-text">Features</div>
@@ -446,7 +502,7 @@
             <div class="footer-text">Payments</div>
             <div class="footer-text">Mobile App</div>
         </div>
-        
+
         <div>
             <div class="footer-text-title">Features</div>
             <div class="footer-text">Booking</div>
@@ -454,7 +510,7 @@
             <div class="footer-text">Discover</div>
             <div class="footer-text">Register</div>
         </div>
-        
+
         <div>
             <div class="footer-text-title">Company</div>
             <div class="footer-text">Partnership</div>
@@ -462,13 +518,17 @@
             <div class="footer-text">Terms Of Service</div>
             <div class="footer-text">Privacy Policy</div>
             <div class="footer-text">Sitemap</div>
-        </div>
-    </div>         
-        <div class="footer-text-title">
-            <p>© 2020 Wetick All Rights Reserved</p>
-        </div>
+        </div> -->
+
     </div>
+   
+    </div>
+    
 </footer>
+<div class="footer-text-title">
+    <p>© 2020 Wetick All Rights Reserved</p>
+</div>
+
 </html>
 </div>
 </div>
