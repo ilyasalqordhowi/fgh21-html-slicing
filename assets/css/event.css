@@ -78,7 +78,7 @@ body {
     }
 
     .event-list {
-        width: 100%;
+        width: 100% !important;
         height: auto;
         overflow: hidden;
     }
@@ -503,7 +503,7 @@ footer {
     margin-left: 125px;
     gap: 125px;
     justify-content: space-between;
-    background-color: #f8f8f8;
+    background-color: #F4F7FF;
     padding: 20px;
     font-family: Arial, sans-serif;
 }
