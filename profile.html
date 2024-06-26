@@ -41,7 +41,7 @@
                             <span>Entepreneur</span>
                         </div>
                     </div>
-                    <nav>
+                    <nav >
                         <ul>
                             <li class="Profile">
                                 <img src="./assets/icon/sidebar1.png" alt="Profile"/>
@@ -76,7 +76,6 @@
                         const menuBtn = document.getElementById('menu-button')
                         const nav = document.getElementById('nav')
                         const navCenter = nav.getElementsByClassName('list-link').item(0)
-                        const navRight = nav.getElementsByClassName('nav-button').item(0)
                         menuBtn.onclick = () => {
                             if (navCenter.getAttribute('style')) {
                                 navCenter.removeAttribute('style')

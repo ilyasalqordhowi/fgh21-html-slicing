@@ -20,6 +20,7 @@ body {
     width: auto;
     height: 90px;
     padding: 0 50px;
+
 }
 
 .navigasi>.main>div:last-child {
@@ -1112,7 +1113,28 @@ label {
     opacity: 0px;
     box-shadow: 0px 2px 15px 0px #1A3C4414;
 }
-
+.arr2-left-resp{
+    background-color: #F4F7FF;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    margin-left: 50px;
+    border-radius: 10px;
+    opacity: 0px;
+    box-shadow: 0px 2px 15px 0px #1A3C4414;
+}
+.arr2-right-resp{
+    background-color: #3366FF;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    margin-left: 50px;
+    border-radius: 10px;
+    opacity: 0px;
+    box-shadow: 0px 2px 15px 0px #1A3C4414;
+}
 .event-box2 {
     width: 260px;
     height: 376px;
