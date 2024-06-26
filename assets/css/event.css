@@ -104,6 +104,7 @@ body {
     }
     .item h2{
         text-align: center !important;
+        font-size: 20px !important
     }
 
     .contain2 {
@@ -137,7 +138,7 @@ body {
     }
 
     .element1 {
-        padding-left: 0 !important;
+        padding-left:20px !important;
     }
 
     .grid-container {
@@ -623,8 +624,6 @@ h4 {
     background-image: url('../image/home1.png');
     width: 549.48px;
     height: 478.36px;
-    top: 181px;
-    left: 767px;
     gap: 0px;
     opacity: 0px;
 }
