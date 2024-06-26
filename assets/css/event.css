@@ -1936,6 +1936,7 @@ label {
     width: auto;
     height: 826px;
     display: flex;
+    margin-bottom: 300px;
     flex-direction: row;
     gap: 58px;
     align-items: center;
@@ -2203,4 +2204,7 @@ button.profile2 {
     color: #007bff;
     background-color: transparent;
     border: 1px solid #007bff;
+}
+.all-footer{
+    background-color: #F4F7FF;
 }
