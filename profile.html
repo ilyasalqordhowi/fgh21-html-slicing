@@ -72,6 +72,25 @@
                                 Logout</li>
                         </ul>
                     </nav>
+                    <script>
+                        const menuBtn = document.getElementById('menu-button')
+                        const nav = document.getElementById('nav')
+                        const navCenter = nav.getElementsByClassName('list-link').item(0)
+                        const navRight = nav.getElementsByClassName('nav-button').item(0)
+                        menuBtn.onclick = () => {
+                            if (navCenter.getAttribute('style')) {
+                                navCenter.removeAttribute('style')
+                            } else {
+                                navCenter.setAttribute('style', 'display:none;')
+                            }
+                            if (navRight.getAttribute('style')) {
+                                navRight.removeAttribute('style')
+                            } else {
+                                navRight.setAttribute('style', 'display:none;')
+                            }
+                
+                        }  
+                    </script>
                 </div>
                 <div class="card-profile">
                     <div class="container-profile">
@@ -146,7 +165,7 @@
     <footer >
         <div class="grid-container">
             <div class="element1">
-                <div class="logo"> <img src="./assets/wetick.png" alt="logo wetick" class="image">
+                <div class="logo"> <img src="./assets/image/wetick.png" alt="logo wetick" class="image">
                     <span class="blue">We</span><span class="red">Tick</span>
                 </div>
                 <div>

@@ -25,8 +25,10 @@ body {
 .navigasi>.main>div:last-child {
     display: none;
 }
-/* media quary home */
+
+
 @media (max-width:991px) {
+    /* media quary home */
     .navigasi {
         flex-direction: column;
         width: 100%;
@@ -34,7 +36,6 @@ body {
         height: unset;
         padding: 20px;
         gap: 10px;
-        position: sticky;
         top: 0;
     }
 
@@ -54,6 +55,10 @@ body {
         flex-direction: column;
         text-align: center;
     }
+    .list-link li a{
+        color: black;
+        text-decoration: none;
+    }
 
     .navigasi .nav-button {
         display: flex;
@@ -71,29 +76,47 @@ body {
         height: auto;
         overflow: hidden;
     }
+
     .button-arrow-responsive {
         display: flex !important;
     }
+
     .date-grid {
-        width: 300.5px;
+        width: 100%;
         height: 75px;
+        gap: 30px !important;
     }
 
     .event-list {
-        width: 100% !important;
+        width: 330px !important;
         height: auto;
         overflow: hidden;
     }
-    
-    .contain2{
+    .list-location{
+     margin-top: 0px !important ;
+    }
+    .row{
+        text-align: -webkit-center;
+        display: unset !important;
+    }
+    .item1{
+        display: none;
+    }
+    .item h2{
+        text-align: center !important;
+    }
+
+    .contain2 {
         height: 650px !important;
 
     }
-    .partner{
-    text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 0px !important;
+
+    .partner {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin: 0px !important;
     }
+
     .kategori {
         display: flex !important;
         flex-wrap: wrap;
@@ -101,27 +124,30 @@ body {
         gap: 10px !important;
         width: auto !important;
     }
+
     #footer {
         display: grid !important;
         width: 100%;
     }
-    
+
     .additional-contain2 {
         width: 100%;
         height: auto;
         overflow: hidden;
     }
 
-    .element1{
+    .element1 {
         padding-left: 0 !important;
     }
 
     .grid-container {
-        display: inline!important;
+        display: inline !important;
     }
-    .list-contain{
+
+    .list-contain {
         flex-wrap: wrap;
     }
+
     .grid {
         width: 100%;
         height: auto;
@@ -130,13 +156,11 @@ body {
         justify-content: center;
         align-items: center;
     }
-    
-    }
+    /* akhir media quary home */
+    /* media quary profile */
 
 
-    
-
-    
+}
 
 
 #menu-button {
@@ -297,6 +321,7 @@ input[type="password"] {
     margin: auto;
     text-align: left;
 }
+
 input[type="Email"]::placeholder,
 input[type="confrimPassword"]::placeholder {
     opacity: 0.5;
@@ -508,6 +533,7 @@ button {
     gap: 0;
 
 }
+
 .element1 {
     grid-row: 1 / 7;
     margin-left: 50px;
@@ -520,6 +546,7 @@ button {
     padding-left: 100px;
     margin: 0;
 }
+
 #footer {
     display: flex;
     width: 100%;
@@ -560,16 +587,16 @@ button {
 }
 
 .footer-text {
-        margin-bottom: 20px;
-        font-family: 'Poppins';
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 21px;
-        letter-spacing: 1px;
-        text-align: left;
-        gap: 0px;
-        opacity: 0px;
-        color: rgb(111, 115, 119);
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-align: left;
+    gap: 0px;
+    opacity: 0px;
+    color: rgb(111, 115, 119);
 }
 
 h3 {
@@ -754,10 +781,10 @@ label {
 
 .event-box .event-text .people {
     display: flex;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
 }
 
 .event-box .event-text .people div {
@@ -793,12 +820,14 @@ label {
 
 
 }
+
 .people img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    
+
 }
+
 /* .event-box .event-text .people div img {
     width: 100%;
     height: 100%;
@@ -850,9 +879,11 @@ label {
     opacity: 0px;
     box-shadow: 0px 2px 15px 0px #1A3C4414;
 }
-.button-arrow-responsive{
+
+.button-arrow-responsive {
     display: none;
 }
+
 .grid-container-discover {
     width: 100%;
     display: flex;
@@ -892,7 +923,14 @@ label {
 
 }
 
-.item {
+.item1 {
+    margin-top: 10px;
+    width: calc(25% - 10px);
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.item-responsive {
     margin-top: 10px;
     width: calc(25% - 10px);
     box-sizing: border-box;
@@ -900,24 +938,27 @@ label {
     margin-bottom: 15px;
 }
 
-.item button {
-    width: 160px;
-    height: 30px;
-    top: 1929px;
-    left: 118px;
-    gap: 0px;
-    border-radius: 30px 0px 0px 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-}
+.item-responsive img {
+    width: 90%;
+    height: auto;
 
-.item img {
+}
+.item1 img {
     width: 90%;
     height: auto;
 
 }
 
-.item .label {
+.item-responsive .label {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.item1 .label {
     color: white;
     text-align: center;
     font-size: 15px;
@@ -939,7 +980,7 @@ label {
 
 }
 
-.item button {
+.location {
     background-color: #FFFFFF40;
     border: 1px solid #007bff;
     border-radius: 10px;
@@ -1955,7 +1996,7 @@ label {
 .inside-list ul li.card {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0px;
     position: relative;
     margin-left: 0;
     margin-top: 30px;
@@ -1977,17 +2018,18 @@ label {
 }
 
 .card-profile {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin-top: 200px;
-        box-shadow: 0px 2px 15px 0px #1A3C4414;
-        gap: 0;
-        padding: 46px 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 200px;
+    box-shadow: 0px 2px 15px 0px #1A3C4414;
+    gap: 0;
+    padding: 46px 50px;
 }
+
 .container-profile {
     display: flex;
     width: 100%;

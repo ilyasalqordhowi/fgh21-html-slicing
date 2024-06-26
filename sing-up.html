@@ -18,8 +18,6 @@
         </div>
         <h1>Sign Up</h1>
         <span class="account">Already have an account?<span class="blue">Log in</span>
-        <form>
-           
             <div class="form-row">
                 <form id="auth-login">
                 <div class="form-group">
@@ -45,25 +43,9 @@
                 <div class="form-group center-button">
                     <button type="submit">Sign Up</button>
                 </div>
+                <script src="./assets/javascript/script.js"></script>
                 </form>
-                <script>
-                    const authLoginFrom = document.getElementById("auth-login")
-              
-                    authLoginFrom.onsubmit = (event) => {
-                      event.preventDefault()
-                      const name = event.target.name.value;
-                      const Email = event.target.Email.value;
-                      const password = event.target.password.value;
-                      const confirmPassword = event.target.confirmPassword.value;
-                      window.alert("your name is"+name+"your email is"+Email+"your password is"+password+"and your is confirm password"+ConfirmPassword)
-                    }
-                  </script>
             </div>
-        </form>
-      
             </div>
-        </form>
- 
-      
 </body>
 </html>
