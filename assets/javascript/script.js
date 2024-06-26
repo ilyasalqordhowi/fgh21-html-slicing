@@ -104,6 +104,9 @@ const eventImage = document.createElement('img');
 eventImage.src = event.image;
 eventImage.alt = event.title;
 eventBox.appendChild(eventImage);
+eventBox.onclick = () => {
+    window.location = '/event.html'
+}
 
 const eventText = document.createElement('div');
 eventText.className = 'event-text';
