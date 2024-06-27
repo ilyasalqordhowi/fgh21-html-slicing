@@ -194,7 +194,7 @@ footerData.forEach(section => {
     const confirmPassword = e.target.confirmPassword.value
     window.location = "/index.html#footer"
  }
-//  footer
+//  footer event
 fetch("event.html")
   .then(res => res.text())
   .then(result => {
