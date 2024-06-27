@@ -29,6 +29,7 @@ body {
 
 
 @media (max-width:991px) {
+
     /* media quary home */
     .navigasi {
         flex-direction: column;
@@ -56,7 +57,8 @@ body {
         flex-direction: column;
         text-align: center;
     }
-    .list-link li a{
+
+    .list-link li a {
         color: black;
         text-decoration: none;
     }
@@ -93,17 +95,21 @@ body {
         height: auto;
         overflow: hidden;
     }
-    .list-location{
-     margin-top: 0px !important ;
+
+    .list-location {
+        margin-top: 0px !important;
     }
-    .row{
+
+    .row {
         text-align: -webkit-center;
         display: unset !important;
     }
-    .item1{
+
+    .item1 {
         display: none;
     }
-    .item h2{
+
+    .item h2 {
         text-align: center !important;
         font-size: 20px !important
     }
@@ -139,7 +145,7 @@ body {
     }
 
     .element1 {
-        padding-left:20px !important;
+        padding-left: 20px !important;
     }
 
     .grid-container {
@@ -158,6 +164,7 @@ body {
         justify-content: center;
         align-items: center;
     }
+
     /* akhir media quary home */
     /* media quary profile */
 
@@ -930,6 +937,7 @@ label {
     margin-right: 20px;
     margin-bottom: 15px;
 }
+
 .item-responsive {
     margin-top: 10px;
     width: calc(25% - 10px);
@@ -943,6 +951,7 @@ label {
     height: auto;
 
 }
+
 .item1 img {
     width: 90%;
     height: auto;
@@ -958,6 +967,7 @@ label {
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
 .item1 .label {
     color: white;
     text-align: center;
@@ -1113,7 +1123,8 @@ label {
     opacity: 0px;
     box-shadow: 0px 2px 15px 0px #1A3C4414;
 }
-.arr2-left-resp{
+
+.arr2-left-resp {
     background-color: #F4F7FF;
     background-repeat: no-repeat;
     background-position: center;
@@ -1124,7 +1135,8 @@ label {
     opacity: 0px;
     box-shadow: 0px 2px 15px 0px #1A3C4414;
 }
-.arr2-right-resp{
+
+.arr2-right-resp {
     background-color: #3366FF;
     background-repeat: no-repeat;
     background-position: center;
@@ -1135,6 +1147,7 @@ label {
     opacity: 0px;
     box-shadow: 0px 2px 15px 0px #1A3C4414;
 }
+
 .event-box2 {
     width: 260px;
     height: 376px;
@@ -1149,6 +1162,18 @@ label {
 
 }
 
+.image-film {
+    height: 60%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden
+}
+.people2{
+    margin-bottom: 50%;
+}
+
 .event-box2 .people2 img {
     width: 100%;
     height: 100%;
@@ -1158,7 +1183,7 @@ label {
 
 .event-box img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 
 }
@@ -1200,11 +1225,12 @@ label {
 }
 
 .event-box2 .event-text2 .people2 div {
+    height: 29px;
     width: 28px;
-    height: 28px;
-    border-radius: 14px;
-    overflow: hidden;
     border: 1px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
 }
 
 .event-box2 .event-text2 .people2 div:not(:first-child) {
@@ -2226,6 +2252,7 @@ button.profile2 {
     background-color: transparent;
     border: 1px solid #007bff;
 }
-.all-footer{
+
+.all-footer {
     background-color: #F4F7FF;
 }
