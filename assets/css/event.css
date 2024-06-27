@@ -2317,6 +2317,8 @@ button.profile2 {
     color: #3366FF;
     width: 125px;
     height: 50px;
+    margin-top: 0;
+    align-items: center;
 }
 .no-ticket{
     Width:315px;
@@ -2331,6 +2333,7 @@ button.profile2 {
     line-height: 36px;
     letter-spacing: 1px;
     text-align: center;
+    margin-top: 10px;
 }
 .no-ticket p{
     color: #B3B8B8;
