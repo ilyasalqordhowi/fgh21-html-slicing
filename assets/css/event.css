@@ -11,21 +11,7 @@ body {
     flex-direction: column;
 }
 
-.navigasi {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Poppins';
-    background-color: white;
-    width: auto;
-    height: 90px;
-    padding: 0 50px;
 
-}
-
-.navigasi>.main>div:last-child {
-    display: none;
-}
 
 
 @media (max-width:991px) {
@@ -171,7 +157,7 @@ body {
 
 }
 
-
+/* navigasi */
 #menu-button {
     width: 24px;
     height: 24px;
@@ -180,6 +166,22 @@ body {
     border-radius: 0;
     margin-top: 0;
     background-image: url(../icon/menu.png);
+}
+
+.navigasi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+    background-color: white;
+    width: auto;
+    height: 90px;
+    padding: 0 50px;
+
+}
+
+.navigasi>.main>div:last-child {
+    display: none;
 }
 
 .logo {
@@ -213,7 +215,19 @@ body {
     border: 2px solid #3366FF;
 }
 
+.red {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
 
+.blue {
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+/* sing-up page */
 body.singup {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -260,17 +274,7 @@ body.singup {
     padding: 2px;
 }
 
-.red {
-    color: red;
-    font-weight: bold;
-    margin-bottom: 0px;
-}
 
-.blue {
-    color: blue;
-    font-weight: bold;
-    margin-bottom: 0px;
-}
 
 h1 {
     font-family: 'Poppins', bold;
@@ -1349,6 +1353,7 @@ label {
 
 }
 
+/* booking page */
 .center-event .left-booking img {
     width: 500px;
     height: 409.5px;
@@ -1754,6 +1759,7 @@ label {
     position: absolute;
 }
 
+/* payment page */
 .center-event2 div h1 {
     margin-left: 100px;
 }
@@ -1980,6 +1986,7 @@ label {
     margin-left: 50px;
 }
 
+/* profile page */
 .content3 {
     width: auto;
     height: 826px;
@@ -2253,4 +2260,83 @@ button.profile2 {
     background-color: transparent;
     border: 1px solid #007bff;
 }
+.all-footer{
+    background-color: #F4F7FF;
+}
+/* my-booking */
+.sidebar2 {
+    width: 300px;
+    height: auto;
+    color: black;
+    padding: 15px;
+    box-sizing: border-box;
+}
 
+.sidebar2 .sidebar-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar2 .sidebar-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px solid #3366FF;
+}
+
+.card-my-booking {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 650px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px 0px #1A3C4414;
+    gap: 0;
+    padding: 33px 50px;
+}
+
+.container-my-booking {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.left-my-booking {
+    width: 468px;
+    height: auto;
+}
+
+.right-my-booking button {
+    background-color: #EAF1FF;
+    color: #3366FF;
+    width: 125px;
+    height: 50px;
+}
+.no-ticket{
+    Width:315px;
+    Height:113px;
+    text-align: center;
+    margin: 186px 305px 268px 305px;
+}
+.no-ticket h2 {
+    font-family: "Poppins", "bold";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.no-ticket p{
+    color: #B3B8B8;
+    font-family: "Poppins", "bold";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 31px;
+    text-align: center;
+}
