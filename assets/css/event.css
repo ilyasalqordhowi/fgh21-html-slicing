@@ -1170,7 +1170,8 @@ label {
     display: flex;
     overflow: hidden
 }
-.people2{
+
+.people2 {
     margin-bottom: 50%;
 }
 
@@ -2253,6 +2254,3 @@ button.profile2 {
     border: 1px solid #007bff;
 }
 
-.all-footer {
-    background-color: #F4F7FF;
-}
