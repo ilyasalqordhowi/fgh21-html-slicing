@@ -186,14 +186,14 @@ footerData.forEach(section => {
     footer.appendChild(sectionDiv);
 });
 // sing up
- const form = document.getElementById("auth-login")
- form.onsubmit = (e) => {
-    const name = e.target.name.value
-    const email = e.target.email.value
-    const password = e.target.password.value
-    const confirmPassword = e.target.confirmPassword.value
-    window.location = "/index.html#footer"
- }
+//  const form = document.getElementById("auth-login")
+//  form.onsubmit = (e) => {
+//     const name = e.target.name.value
+//     const email = e.target.email.value
+//     const password = e.target.password.value
+//     const confirmPassword = e.target.confirmPassword.value
+//     window.location = "/index.html#footer"
+//  }
 //  footer event
 fetch("event.html")
   .then(res => res.text())

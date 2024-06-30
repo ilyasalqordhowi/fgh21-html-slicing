@@ -180,7 +180,7 @@ body {
 }
 
 .navigasi>.main>div:last-child {
-    display: none;
+    display: flex;
 }
 
 .logo {
