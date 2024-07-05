@@ -15,7 +15,10 @@ body {
 
 
 @media (max-width:991px) {
-
+/* media quary sing up */
+.container-login .left{
+    display: none !important;
+}
     /* media quary home */
     .navigasi {
         flex-direction: column;
@@ -88,6 +91,9 @@ body {
     .row {
         text-align: -webkit-center;
         display: unset !important;
+    }
+    .arr2-right{
+        display: none;
     }
 
     .item1 {
@@ -227,18 +233,17 @@ body {
 }
 
 /* sing-up page */
-body.singup {
+.container-login {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: right;
-    align-items: center;
+    /* justify-content: right;
+    align-items: center; */
     height: 100vh;
-    background: linear-gradient(to right, blue 50%, white 50%);
 }
 
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -247,35 +252,48 @@ body.singup {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
-.left {
-    width: 100%;
+.container-login .left {
+    flex: 1;
     height: 100%;
-    overflow: hidden;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    /* margin-bottom: 20px; */
     background-color: #3366FF;
-    background-image: url('../image/home1.png');
-    background-size: cover;
-    background-position: left;
+    /* background-size: cover; */
+    /* background-position: left; */
+    margin-top: 0;
 }
 
-.right {
+.container-login .left img{
+    width: 100%;
+}
+
+.container-login .container {
+    flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.right .image {
-    width: 50px;
-    height: 50px;
+.container-login .container .right-singup{
+    align-items: center;
+    /* width: 50px; */
+    /* height: 50px; */
     border-radius: 50%;
     padding: 2px;
+    display: flex;
 }
 
+.container-singup{
+    align-items: center;
+}
 
-
-h1 {
+.container-login .container h1 {
     font-family: 'Poppins', bold;
     font-size: 30px;
     font-weight: bold;
@@ -283,7 +301,6 @@ h1 {
     letter-spacing: 0.5px;
     text-align: left;
     margin-bottom: 15px;
-    margin-left: 50px;
 }
 
 .account {
@@ -311,7 +328,7 @@ form {
     margin-bottom: 15px;
     border-radius: 8px;
     overflow: hidden;
-    text-align: center;
+   
 }
 
 .form-group .label {
@@ -892,6 +909,7 @@ label {
 
 .button-arrow-responsive {
     display: none;
+    justify-content: center;
 }
 
 .grid-container-discover {
@@ -2363,8 +2381,8 @@ body {
   }
   span {
     font-weight: bold;
-    font-size: 26px;
-    display: flex;
+    font-size: 15px;
+    display: contents;
   }
   .span1 {
     color: #3366ff;

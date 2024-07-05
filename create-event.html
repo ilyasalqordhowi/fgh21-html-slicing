@@ -1,197 +1,47 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Event</title>
-    <link rel="stylesheet" href="assets/css/event.css" />
-  </head>
-  <body>
-    <div class="absolute-content">
-        <div class="navbar">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/event.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body-event">
+    <nav id="nav" class="navigasi">
+        <div class="main">
             <div class="logo">
-                <a href="index.html">
-                <img src="assets/img/logo_1.svg" alt="" class="logo1" />
-                </a>
-                <span class="span1">We</span><span class="span2">Tick</span>
+                <img src="./assets/image/wetick.png" alt="logo wetick" class="image">
+                <span class="blue">We</span><span class="red">Tick</span>
             </div>
-            <div class="menu">
-                <div><a href="index.html">Home</div></a>
-                <div><a href="create-event.html">Create Event</a></div>
-                <div><a href="index.html#location">Location</a></div>
-            </div>
-            <div class="profile">
-                <div>
-                <a href="profile.html">
-                    <img src="/assets/img/profile.svg" alt="" />
-                </a>
-                </div>
-                <div class="profile-name">jhon Tomson</div>
+            <div>
+                <button id="menu-button"></button>
             </div>
         </div>
-        <div class="content">
-            <div class="sub-content">
-                <div class="left">
-                <div class="profile-content">
-                    <div class="names">
-                    <div class="profile-in">
-                        <img src="/assets/img/profile.svg" alt="" />
-                    </div>
-                    <div class="profile-name-in">
-                        <div class="name-bold">Jhon Tomson</div>
-                        <div class="sub-name">Entrepreneur, ID</div>
-                    </div>
-                    </div>
-                    <div class="profile-menu">
-                    <div class="sub-content-menu">
-                        <div class="profile-img">
-                        <img src="/assets/img/Vector.svg" alt="" class="menu-img" />
-                        </div>
-                        <div class="type">Profile</div>
-                    </div>
-                    <div class="sub-content-menu-in">
-                        <div class="profile-img">
-                        <img
-                            src="/assets/img/profile-card.svg"
-                            alt=""
-                            class="menu-img"
-                        />
-                        </div>
-                        <div class="type">Card</div>
-                    </div>
-                    <a href="profile.html" class="none-underline">
-                        <div class="sub-content-menu-in">
-                        <div class="profile-img">
-                            <img
-                            src="/assets/img/profile-edit.svg"
-                            alt=""
-                            class="menu-img"
-                            />
-                        </div>
-                        <div class="type">Edit Profile</div>
-                        </div>
-                    </a>
-                    <a href="password.html" class="none-underline">
-                        <div class="sub-content-menu-in">
-                        <div class="profile-img-red">
-                            <img
-                            src="/assets/img/profile-change.svg"
-                            alt=""
-                            class="menu-img"
-                            />
-                        </div>
-                        <div>Change Password</div>
-                        </div>
-                    </a>
-                    <div class="sub-content-menu">
-                        <div class="profile-img">
-                        <img
-                            src="/assets/img/profile-book-active.svg"
-                            alt=""
-                            class="menu-img"
-                        />
-                        </div>
-                        <div class="type-blue">My Booking</div>
-                    </div>
-                    <div class="sub-content-menu">
-                        <div class="profile-img">
-                        <img
-                            src="/assets/img/profile-list.svg"
-                            alt=""
-                            class="menu-img"
-                        />
-                        </div>
-                        <div class="type">My Wishlist</div>
-                    </div>
-                    <div class="sub-content-menu">
-                        <div class="profile-img">
-                        <img
-                            src="/assets/img/profile-setting.svg"
-                            alt=""
-                            class="menu-img"
-                        />
-                        </div>
-                        <div class="type">Settings</div>
-                    </div>
-                    <div class="sub-content-menu">
-                        <div class="profile-img-red">
-                        <img
-                            src="/assets/img/profil-logout.svg"
-                            alt=""
-                            class="menu-img"
-                        />
-                        </div>
-                        <div class="type-red">Logout</div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                <div class="right">
-                    <div class="mybooking">
-                        <div>My Booking</div>
-                        <div class="iconcalender">
-                        <img src="assets/img/iconcalender.svg" alt="">
-                        <div>march</div>
-                        </div>
-                    </div>
-                    <div class="center">
-                        <div class="text1">No tickets bought</div>
-                        <div class="text2">It appears you haven’t bought any tickets yet. Maybe try searching these?</div>
-                    </div>
-                </div>
-                </div>
-            
+        <div>
+            <ul class="list-link">
+                <li>
+                    <a href="#home" style="color: black;text-decoration: none;">Home</a>
+                </li>
+                <li>
+                <a href="#" style="color: black; text-decoration: none;">Create Event</a>
+            </li>
+                <li>
+                <a href="#location-home"  style="color: black;text-decoration: none;">Location</a>
+            </li>
+            </ul>
         </div>
-        <div class="footer">
-            <div class="footer-content">
-                <div class="part">
-                <div class="part1">
-                    <div class="footer-logo">
-                    <img src="assets/img/logo_1.svg" alt="" class="logo1" />
-                    <span class="span1">We</span><span class="span2">Tick</span>
-                    </div>
-                    <div class="text-logo">Find events you love with our</div>
-                    <div class="sosmed">
-                    <div class="facebbok">
-                        <img src="/assets/img/footer-fb.svg" alt="" />
-                    </div>
-                    <div class="whatsapp">
-                        <img src="/assets/img/footer-wa.svg" alt="" />
-                    </div>
-                    <div class="instagram">
-                        <img src="/assets/img/footer-ig.svg" alt="" />
-                    </div>
-                    <div class="twitter">
-                        <img src="/assets/img/footer-x.svg" alt="" />
-                    </div>
-                    </div>
-                </div>
-                <div class="part2">
-                    <div class="footer-title">Wetick</div>
-                    <div class="footer-link">About Us</div>
-                    <div class="footer-link">Feature</div>
-                    <div class="footer-link">Blog</div>
-                    <div class="footer-link">Payments</div>
-                    <div class="footer-link">Mobile App</div>
-                </div>
-                <div class="part3">
-                    <div class="footer-title">Features</div>
-                    <div class="footer-link">Booking</div>
-                    <div class="footer-link">Create event</div>
-                    <div class="footer-link">Discover</div>
-                    <div class="footer-link">Register</div>
-                </div>
-                <div class="part4">
-                    <div class="footer-title">Company</div>
-                    <div class="footer-link">Partnership</div>
-                    <div class="footer-link">Help</div>
-                    <div class="footer-link">Terms of Service</div>
-                    <div class="footer-link">Privacy Policy</div>
-                    <div class="footer-link">Sitemap</div>
-                </div>
-                </div>
-                <div class="copyright">&copy; 2020 Wetick All Rights Reserved</div>
-            </div>
+        <div class="nav-button">
+            <button id="to-Login" type="button">Login</button>
+            <button id="to-singup" type="button">Sing Up</button>
         </div>
+    </nav>
+    <div class="contain">
+        <div class="image-people"></div>
     </div>
     <div class="content-create">
       <div class="sub-content-create">

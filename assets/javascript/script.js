@@ -195,19 +195,4 @@ footerData.forEach(section => {
 //     window.location = "/index.html#footer"
 //  }
 //  footer event
-fetch("event.html")
-  .then(res => res.text())
-  .then(result => {
-    console.log(result); 
-  })
-
-  async function init() {
-   
-      const res = await fetch("footer.html");
-      const result = await res.text();
-
-      console.log(result); 
-  }
-  
-  init();
   
