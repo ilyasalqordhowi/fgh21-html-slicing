@@ -238,9 +238,14 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+  /* media quary profile */
+  .body-event {
+    min-height: 0;
+  }
   .content3 {
     height: unset !important;
     padding: 0 !important;
+    margin-bottom: 0 !important;
   }
   .content3 .sidebar {
     display: none;
@@ -255,6 +260,21 @@ body {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+  }
+
+  .content3 .card-profile .container-profile .right-profile .profile3 {
+    border-left-style: none;
+    border-color: #c1c5d040;
+    margin-top: 0;
+  }
+
+  .content3
+    .card-profile
+    .container-profile
+    .right-profile
+    .profile3
+    .Choose-photo {
+    display: none;
   }
 }
 
