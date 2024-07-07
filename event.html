@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Event</title>
     <link rel="stylesheet" href="./assets/css/event.css">
@@ -12,11 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="body-event">
-    <div class="navigasi">
+<body>
+    <!-- Navbar -->
+    <nav id="nav" class="navigasi">
+        <div class="navi">
         <div class="logo">
             <img src="./assets/image/wetick.png" alt="logo wetick" class="image">
             <span class="blue">We</span><span class="red">Tick</span>
+        </div>
+        <div>
+            <button id="menu-button"></button>
+        </div>
         </div>
         <div>
             <ul class="list-link">
@@ -29,7 +34,9 @@
             <span><img src="assets/image/profile.png"></span>
             <span>Jhon Tomson</span>
         </div>
-    </div>
+    </nav>
+
+    <!-- Container -->
     <div class="center-event">
         <div class="left-element">
             <div class="box">
@@ -67,7 +74,7 @@
                 <h1>Sights & Sounds</h1>
                 <h1>Exhibition</h1>
                 <div class="icon">
-                    <i class="fa fa-map-marker"><span>Jakarta, Indonesia</span></i>
+                    <i class="fa fa-map-marker"><span>Bogor, Indonesia</span></i>
                     <i class="fa fa-clock-o"><span>Wed, 15 Nov, 4:00 PM</span></i>
                 </div>
                 <div class="att">
@@ -81,11 +88,13 @@
                     invited to tear up…</p>
                 <a href="#">Read More</a>
                 <h2>Location</h2>
-                <img src="assets/image/map.png">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102913.37370809226!2d106.72671057758437!3d-6.595508294332292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5b7ad0f824b%3A0x4c71fd1b0b8ae76d!2sKota%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1720354523174!5m2!1sid!2sid"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <button>Buy Tikets</button>
         </div>
     </div>
+
+    <!-- Footer -->
 </body>
 <footer>
     <div class="grid-container">
@@ -134,9 +143,4 @@
         </div>
     </div>
 </footer>
-</html>
-</div>
-</div>
-</body>
-
 </html>

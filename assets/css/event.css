@@ -161,14 +161,21 @@ body {
     flex-direction: column;
     margin: 0px !important;
     padding: 0px !important;
+    height: unset !important;
   }
 
-  .center-event .box {
+  .center-event .left-element .box {
     display: flex;
     width: 100%;
     position: relative;
     align-items: center;
+    border-radius: 0%;
   }
+
+  .center-event .left-element {
+    text-align: left !important;
+  }
+
   .box img {
     display: flex;
     position: relative;
@@ -181,6 +188,8 @@ body {
     flex-direction: column;
     position: absolute;
     font-size: 30px;
+    padding: 20px;
+    margin: 100px 0 30px 0;
   }
 
   .top1 h1 {
@@ -223,10 +232,20 @@ body {
   .right-element {
     width: auto;
   }
+
+  .navi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 992px) {
   .top1 {
+    display: none;
+  }
+
+  .navi div button {
     display: none;
   }
 }
@@ -499,20 +518,28 @@ button:hover {
   margin-bottom: 100px;
 }
 
-.left-elemnt {
+.center-event .left-element {
   flex: 1;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.left-elemnt img {
+.center-event .left-element .box {
+  width: 100%;
+  height: auto;
   overflow: hidden;
   border-radius: 40px;
 }
 
-.left-elemnt i {
+.center-event .left-element .box img {
+  width: 100%;
+  height: 100%;
+}
+
+.center-event .left-element .box i {
   margin-top: 50px;
   letter-spacing: 2px;
-  font-family: "Poppins", "bold";
 }
 
 .right-element {
@@ -520,7 +547,7 @@ button:hover {
   margin-left: 100px;
 }
 
-.right-element h1 {
+.right-element .top h1 {
   font-family: "Poppins";
   font-size: 24px;
   font-weight: 600;
@@ -530,7 +557,7 @@ button:hover {
   margin: 0;
 }
 
-.icon {
+.right-element .top .icon {
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: "Poppins";
@@ -540,15 +567,7 @@ button:hover {
   letter-spacing: 1px;
   text-align: left;
 }
-
-.att img {
-  width: 90px;
-
-  gap: 0px;
-  opacity: 0px;
-}
-
-.att p {
+.right-element .top .att p {
   font-family: "Poppins";
   font-size: 14px;
   font-weight: 500;
@@ -557,16 +576,13 @@ button:hover {
   text-align: left;
 }
 
-h2 {
-  font-family: "Poppins";
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: 1px;
-  text-align: left;
+.right-element .top .att img {
+  width: 90px;
+  gap: 0px;
+  opacity: 0px;
 }
 
-.end {
+.right-element .end {
   width: 500px;
   font-family: "Poppins";
   font-size: 12px;
@@ -576,17 +592,15 @@ h2 {
   text-align: left;
 }
 
-.end img {
-  width: 315px;
-  height: 151px;
-  top: 701px;
-  left: 684px;
-  gap: 0px;
-  border-radius: 20px 0px 0px 0px;
-  opacity: 0px;
+.right-element .end h2 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: left;
 }
-
-.end a {
+.right-element .end a {
   font-family: "Poppins";
   font-size: 12px;
   font-weight: 500;
@@ -594,6 +608,16 @@ h2 {
   letter-spacing: 0.5px;
   text-align: left;
   text-decoration: none;
+}
+
+.right-element .end img {
+  width: 315px;
+  height: 151px;
+  top: 701px;
+  left: 684px;
+  gap: 0px;
+  border-radius: 20px 0px 0px 0px;
+  opacity: 0px;
 }
 
 button {
@@ -617,8 +641,17 @@ button {
   grid-template-columns: auto auto auto auto;
   gap: 0;
 }
+#footer {
+  display: flex;
+  width: 100%;
+  gap: 125px;
+  justify-content: space-between;
+  background-color: #f4f7ff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
 
-.element1 {
+.grid-container .element1 {
   grid-row: 1 / 7;
   margin-left: 50px;
   font-family: "Poppins";
@@ -631,46 +664,22 @@ button {
   margin: 0;
 }
 
-#footer {
-  display: flex;
-  width: 100%;
-  gap: 125px;
-  justify-content: space-between;
-  background-color: #f4f7ff;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
 .footer-section {
   display: flex;
   flex-direction: column;
 }
 
-.footer-text-title {
+.grid-container div .footer-text-title {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #333;
 }
 
-.footer-text {
+.grid-container div .footer-text {
   font-size: 14px;
   margin-bottom: 5px;
-  color: #666;
   text-decoration: none;
-}
-
-.footer-text:hover {
-  color: #000;
-  text-decoration: underline;
-}
-
-.footer-text-title {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.footer-text {
   margin-bottom: 20px;
   font-family: "Poppins";
   font-size: 14px;
@@ -681,6 +690,11 @@ button {
   gap: 0px;
   opacity: 0px;
   color: rgb(111, 115, 119);
+}
+
+.grid-container div .footer-text:hover {
+  color: #000;
+  text-decoration: underline;
 }
 
 h3 {
