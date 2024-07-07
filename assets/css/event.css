@@ -238,6 +238,24 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+  .content3 {
+    height: unset !important;
+    padding: 0 !important;
+  }
+  .content3 .sidebar {
+    display: none;
+  }
+
+  .content3 .card-profile {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .content3 .card-profile .container-profile {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 @media (min-width: 992px) {
