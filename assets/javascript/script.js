@@ -23,7 +23,11 @@ menuBtn.onclick = () => {
   }
 };
 // button singup
-const btnToSingUp = document.getElementById("to-singup");
+const btnToSingUp = document.getElementById("to-Login");
+btnToSingUp.onclick = () => {
+  window.location = "/sing-in.html";
+};
+const btnToSingUp = document.getElementById("to-singin");
 btnToSingUp.onclick = () => {
   window.location = "/sing-up.html";
 };
@@ -180,4 +184,3 @@ footerData.forEach((section) => {
 
   footer.appendChild(sectionDiv);
 });
- 
