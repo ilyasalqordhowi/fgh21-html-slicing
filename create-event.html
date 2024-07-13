@@ -1,47 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>HOME</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/event.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/event.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body class="body-event">
-    <nav id="nav" class="navigasi">
-        <div class="main">
-            <div class="logo">
-                <img src="./assets/image/wetick.png" alt="logo wetick" class="image">
-                <span class="blue">We</span><span class="red">Tick</span>
-            </div>
-            <div>
-                <button id="menu-button"></button>
-            </div>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="body-event">
+      <div class="navigasi">
+        <div class="logo">
+          <img
+            src="./assets/image/wetick.png"
+            alt="logo wetick"
+            class="image"
+          />
+          <span class="blue">We</span><span class="red">Tick</span>
         </div>
         <div>
-            <ul class="list-link">
-                <li>
-                    <a href="#home" style="color: black;text-decoration: none;">Home</a>
-                </li>
-                <li>
-                <a href="#" style="color: black; text-decoration: none;">Create Event</a>
-            </li>
-                <li>
-                <a href="#location-home"  style="color: black;text-decoration: none;">Location</a>
-            </li>
+          <ul class="list-link">
+            <li>Home</li>
+            <li>Create Event</li>
+            <li>Location</li>
+          </ul>
+        </div>
+        <div class="profile">
+          <img src="assets/image/profile.png" />
+          <span>Jhon Tomson</span>
+        </div>
+      </div>
+      <div class="content3">
+        <div class="sidebar2">
+          <div class="sidebar-card">
+            <img src="assets/image/profile.png" class="photo-profile" />
+            <div class="content-title">
+              <span class="title">Jhon Tomson</span>
+              <span>Entepreneur</span>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li class="Profile">
+                <img src="./assets/icon/sidebar1.png" alt="Profile" />
+                Profile
+                <div class="inside-list">
+                  <ul>
+                    <li class="card">
+                      <img src="./assets/icon/sidebar2.png" alt="card" />
+                      Card
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icon/sidebar3.png"
+                        alt="edit-profile"
+                      />
+                      <a href="/edit-profile">Edit Profile </a>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/icon/sidebar4.png"
+                        alt="Change-password"
+                      />
+                      Change Password
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/icon/sidebar5.png" alt="my-booking" /> My
+                Booking
+              </li>
+              <li>
+                <img src="./assets/icon/sidebar6.png" alt="my-whislist" /> My
+                Whislist
+              </li>
+              <li>
+                <img src="./assets/icon/sidebar7.png" alt="Settings" /> Settings
+              </li>
+              <li>
+                <img src="./assets/icon/sidebar8.png" alt="Logout" /> Logout
+              </li>
             </ul>
+          </nav>
         </div>
-        <div class="nav-button">
-            <button id="to-Login" type="button">Login</button>
-            <button id="to-singup" type="button">Sing Up</button>
+        <div class="card-my-booking">
+          <div class="container-my-booking">
+            <div class="left-my-booking">
+              <h1>Manage Event</h1>
+            </div>
+            <div class="right-my-booking">
+              <button>Create</button>
+            </div>
+          </div>
+          <div class="no-ticket">
+            <h2>No tickets bought</h2>
+            <p>
+              It appears you haven't bought any tickets yet. Maybe try searching
+              these?
+            </p>
+          </div>
         </div>
-    </nav>
-    <div class="contain">
-        <div class="image-people"></div>
+      </div>
     </div>
     <div class="content-create">
       <div class="sub-content-create">
@@ -125,9 +193,11 @@
               />
             </div>
           </div>
-          <div class="button-create"><a href="index.html">
-            <button type="button" class="button-create-event">Save</button>
-          </a></div>
+          <div class="button-create">
+            <a href="index.html">
+              <button type="button" class="button-create-event">Save</button>
+            </a>
+          </div>
         </form>
       </div>
     </div>
