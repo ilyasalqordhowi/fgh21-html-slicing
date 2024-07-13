@@ -1,3 +1,7 @@
+// const btnToSingUp = document.getElementById("to-singup");
+// btnToSingUp.onclick = () => {
+//   window.location = "/sing-up.html";
+// };
 // navigasi home
 
 const menuBtn = document.getElementById("menu-button");
@@ -23,10 +27,6 @@ menuBtn.onclick = () => {
   }
 };
 // button singup
-const btnToSingUp = document.getElementById("to-singup");
-btnToSingUp.onclick = () => {
-  window.location = "/sing-up.html";
-};
 const btnToSingUp = document.getElementById("to-Login");
 btnToSingUp.onclick = () => {
   window.location = "/sing-in.html";
