@@ -34,10 +34,6 @@ body {
     gap: auto;
   }
 
-  .navigasi > .main > div:last-child {
-    display: unset;
-  }
-
   .navigasi .list-link {
     flex-direction: column;
     text-align: center;
@@ -156,12 +152,35 @@ body {
   /* akhir media quary home */
 
   /* media quary event */
+  body {
+    background-color: unset !important;
+  }
+  .navi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: unset !important;
+  }
+
   .center-event {
     display: flex !important;
     flex-direction: column;
-    margin: 0px !important;
+    width: auto !important;
+    height: auto !important;
+    margin: unset !important;
+    align-items: center;
     padding: 0px !important;
-    height: unset !important;
+  }
+  .all-navbar > .navigasi > .profile {
+    display: none;
+  }
+  .navigasi > .main > div:last-child {
+    display: unset;
+  }
+
+  .center-event .left-element {
+    text-align: left !important;
+    width: 100%;
   }
 
   .center-event .left-element .box {
@@ -172,72 +191,70 @@ body {
     border-radius: 0%;
   }
 
-  .center-event .left-element {
-    text-align: left !important;
+  .center-event .left-element .box .fa-heart-o {
+    display: none;
   }
-
-  .box img {
+  .center-event .left-element .box img {
     display: flex;
     position: relative;
     width: 100%;
     align-items: center;
   }
-  .left-element .box .top1 {
+  .center-event .left-element .box .top1 {
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: absolute;
-    font-size: 30px;
+    width: 100%;
+    font-size: 20px;
     padding: 20px;
-    margin: 100px 0 30px 0;
+    margin: 200px 0 30px 0;
   }
-
-  .top1 h1 {
-    margin: 0px;
-  }
-
-  .top {
-    display: none;
-  }
-
-  .icon {
-    font-size: 30px !important;
+  .center-event .left-element .box .top1 .icon {
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
 
-  .icon span {
-    font-size: 30px !important;
+  .center-event .left-element .box .top1 h1 {
+    margin: 0px;
   }
-
-  .att p {
-    font-size: 30px !important;
-  }
-
-  .att .people2 {
+  .center-event .left-element .top1 .att .people2 {
     display: flex;
     border-radius: 20px;
   }
-  .att .people2 div {
+  .center-event .left-element .top1 .att .people2 div {
     height: 29px;
     border: 1px;
     border-radius: 50%;
   }
 
-  .att .people2 div img {
+  .center-event .left-element .top1 .att .people2 div img {
     border-radius: 40px;
   }
 
-  .right-element {
+  .center-event .right-element {
     width: auto;
   }
-
-  .navi {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .center-event .right-element .top {
+    display: none;
   }
+
+  .center-event .right-element .top .icon {
+    font-size: 10px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .center-event .right-element .top .icon span {
+    font-size: 30px !important;
+  }
+
+  .center-event .right-element .top .att p {
+    font-size: 30px !important;
+  }
+
   /* media quary profile */
   .body-event {
     min-height: 0;
@@ -246,6 +263,7 @@ body {
     height: unset !important;
     padding: 0 !important;
     margin-bottom: 0 !important;
+    width: 100%;
   }
   .content3 .sidebar {
     display: none;
@@ -254,6 +272,15 @@ body {
   .content3 .card-profile {
     margin-top: 0;
     align-items: center;
+    width: 100%;
+  }
+
+  .left-profile {
+    width: 100%;
+  }
+
+  .identity {
+    width: 70% !important;
   }
 
   .content3 .card-profile .container-profile {
@@ -262,7 +289,7 @@ body {
     align-items: center;
   }
 
-  .content3 .card-profile .container-profile .right-profile .profile3 {
+  .content3 .card-profile .container-profi le .right-profile .profile3 {
     border-left-style: none;
     border-color: #c1c5d040;
     margin-top: 0;
@@ -276,14 +303,59 @@ body {
     .Choose-photo {
     display: none;
   }
-}
 
+  /* media quary booking */
+  .center-event2 {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+  }
+  .center-event .left-booking .img1 {
+    display: none;
+  }
+
+  .center-event .left-booking .img2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile {
+    display: none !important;
+  }
+  .center-event .right-booking {
+    width: 375px;
+    height: 45px;
+    display: flex;
+    top: 210px;
+    left: 770px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px;
+    flex-direction: column;
+  }
+
+  .all-navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
 @media (min-width: 992px) {
   .top1 {
     display: none;
   }
 
-  .navi div button {
+  .center-event .left-booking .img2 {
+    display: none;
+  }
+
+  .all-navbar .navigasi .main div button {
+    display: none;
+  }
+  .center-event .left-element .box i {
+    display: none;
+  }
+  #menu-button {
     display: none;
   }
 }
@@ -362,21 +434,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  /* justify-content: right;
-    align-items: center; */
   height: 100vh;
 }
-
-/* .container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} */
 
 .container-login .left {
   flex: 1;
@@ -384,11 +443,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
-  /* margin-bottom: 20px; */
   background-color: #3366ff;
-  /* background-size: cover; */
-  /* background-position: left; */
   margin-top: 0;
 }
 
@@ -403,8 +458,12 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
+.container-login .container .container-right {
+  padding: 100px;
+  padding-bottom: 0px;
+}
 
-.container-login .container .right-singup {
+.container-login .container .container-right .right-singup {
   align-items: center;
   /* width: 50px; */
   /* height: 50px; */
@@ -528,7 +587,7 @@ button:hover {
   color: rgb(104, 104, 233);
   border: none;
   padding: 0;
-  text-align: right;
+  margin-top: unset;
   cursor: pointer;
 }
 
@@ -540,6 +599,8 @@ button:hover {
   background-color: blue;
   border-radius: 20px;
   cursor: pointer;
+  width: 250px;
+  margin-top: unset;
 }
 
 .center-event {
@@ -2787,4 +2848,17 @@ option {
   font-size: 16;
   border: none;
   border-radius: 15px;
+}
+/*  sign in*/
+.sign-with {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-with > .button-with button {
+  background-color: white;
+  border-style: groove;
+  border-color: #007bff;
+  width: 95px;
+  border-radius: 0px;
 }
