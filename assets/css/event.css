@@ -161,6 +161,8 @@ body {
     justify-content: space-between;
     background-color: unset !important;
   }
+  .end {
+  }
 
   .center-event {
     display: flex !important;
@@ -190,7 +192,14 @@ body {
     align-items: center;
     border-radius: 0%;
   }
+  .judul {
+    display: flex;
+    align-items: center;
+  }
 
+  #heart {
+    display: flex;
+  }
   .center-event .left-element .box .fa-heart-o {
     display: none;
   }
@@ -207,8 +216,8 @@ body {
     justify-content: center;
     position: absolute;
     width: 100%;
-    font-size: 50px;
-    padding: 20px;
+    font-size: 15px;
+    padding: 5px;
     margin: 200px 0 30px 0;
   }
   .center-event .left-element .box .top1 .icon {
@@ -234,7 +243,8 @@ body {
   }
 
   .center-event .right-element {
-    width: auto;
+    width: 100%;
+    margin: 2px;
   }
   .center-event .right-element .top {
     display: none;
@@ -318,9 +328,6 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .profile {
-    display: none !important;
-  }
   .center-event .right-booking {
     width: 375px;
     height: 45px;
@@ -334,7 +341,7 @@ body {
   }
 
   .all-navbar {
-    width: 100%;
+    width: 375px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -371,6 +378,10 @@ body {
   background-image: url(../icon/menu.png);
 }
 
+.profile a {
+  display: flex;
+  align-items: center;
+}
 .navigasi {
   display: flex;
   justify-content: space-between;
@@ -682,7 +693,7 @@ button:hover {
 }
 
 .right-element .end {
-  width: 500px;
+  width: 100%;
   font-family: "Poppins";
   font-size: 12px;
   font-weight: 400;
