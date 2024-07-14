@@ -13,6 +13,9 @@ body {
 }
 
 @media (max-width: 991px) {
+  #footer {
+    background-color: white !important;
+  }
   /* media quary sing up */
   .container-login .left {
     display: none !important;
@@ -334,6 +337,9 @@ body {
     width: 100%;
     text-align: left !important;
   }
+  .sidebar2 {
+    display: none;
+  }
 
   .content3 .card-profile .container-profile {
     display: flex;
@@ -398,6 +404,30 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+  }
+
+  .center-event2 {
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  /* create-event */
+  .card-my-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-my-booking {
+    display: flex;
+    flex-direction: column;
+  }
+  /* payment */
+  .right-payment {
+    margin-left: 0px !important;
+  }
+  .all-footer {
+    background-color: white !important;
   }
 }
 @media (min-width: 992px) {
@@ -2617,6 +2647,7 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 .sub-content {
   display: flex;
@@ -2831,7 +2862,7 @@ option {
   margin-right: 115px;
   margin-bottom: 224px;
   border-radius: 30px;
-  height: 736px;
+  height: auto;
   width: 100%;
   max-width: 1135px;
   background-color: white;
@@ -2862,6 +2893,7 @@ option {
   padding-left: 54px;
   padding-right: 54px;
   flex-direction: column;
+  align-items: baseline;
 }
 .left-right-create {
   width: 100%;
@@ -2905,6 +2937,8 @@ option {
 }
 .button-create {
   text-align: end;
+  width: 40%;
+  padding-bottom: 50px;
 }
 .button-create-event {
   height: 60px;
@@ -2944,6 +2978,6 @@ option {
   border-radius: 0px;
 }
 /* pop up */
-/* .content-create.hide {
+.content-create.hide {
   display: none;
-} */
+}

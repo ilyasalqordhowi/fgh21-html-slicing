@@ -8,5 +8,5 @@ btnToSingUp.onclick = () => {
 };
 const createEvent = document.getElementById("create-event");
 createEvent.onclick = () => {
-  window.location = "/v1-my-booking.html";
+  window.location = "/create-event.html";
 };
