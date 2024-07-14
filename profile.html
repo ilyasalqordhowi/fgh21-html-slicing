@@ -10,27 +10,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/event.css">
 </head>
-
 <body>
     <body>
         <div class="body-event">
-            <div class="navigasi">
-                <div class="logo">
-                    <img src="./assets/image/wetick.png" alt="logo wetick" class="image">
-                    <span class="blue">We</span><span class="red">Tick</span>
-                </div>
-                <div>
-                    <ul class="list-link">
-                        <li>Home</li>
-                        <li>Create Event</li> 
-                        <li>Location</li>
-                    </ul>
-                </div>
-                <div class="profile">
-                    <img src="assets/image/profile.png" />
-                    <span>Jhon Tomson</span>
-                </div>
-            </div>
+           <nav id="nav" class="navigasi">
+        <div class="main">
+        <div class="logo">
+            <img src="./assets/image/wetick.png" alt="logo wetick" class="image">
+            <span class="blue">We</span><span class="red">Tick</span>
+        </div>
+        <div>
+            <button id="menu-button"></button>
+        </div>
+        </div>
+        <div>
+            <ul class="list-link">
+                <li>Home</li>
+                <li>Create Event</li>
+                <li>Location</li>
+            </ul>
+        </div>
+        <div class="profile">
+            <a href="profile.html">
+            <span><img src="assets/image/profile.png"></span>
+            <span>Jhon Tomson</span>
+        </a>
+        </div>
+    </nav>
+
             <div class="content3">
                 <div class="sidebar">
                     <div class="sidebar-card">
@@ -71,24 +78,7 @@
                                 Logout</li>
                         </ul>
                     </nav>
-                    <script>
-                        const menuBtn = document.getElementById('menu-button')
-                        const nav = document.getElementById('nav')
-                        const navCenter = nav.getElementsByClassName('list-link').item(0)
-                        menuBtn.onclick = () => {
-                            if (navCenter.getAttribute('style')) {
-                                navCenter.removeAttribute('style')
-                            } else {
-                                navCenter.setAttribute('style', 'display:none;')
-                            }
-                            if (navRight.getAttribute('style')) {
-                                navRight.removeAttribute('style')
-                            } else {
-                                navRight.setAttribute('style', 'display:none;')
-                            }
-                
-                        }  
-                    </script>
+
                 </div>
                 <div class="card-profile">
                     <div class="container-profile">
@@ -116,7 +106,7 @@
                                 <div class="btn-edit">Edit</div>
                                 </div>
                             </div>
-                            <div class="identity2">
+                            <div class="identity">
                                 <div class="identity-filling">Gender</div>
                                 <div class="gender"> 
                                     <div class="male-female">
@@ -129,15 +119,15 @@
                                         </div>
                                     </div>
                             </div>
-                            <div class="identity3">
+                            <div class="identity">
                                 <div class="identity-filling">Profession</div>
                                 <div> <input type="identity-profession" id="Full Name" placeholder="Entrepreneur"></div>
                             </div>
-                            <div class="identity4">
+                            <div class="identity">
                                 <div class="identity-filling">Nationality</div>
                                 <div> <input type="identity-nationality" id="Full Name" placeholder="Indonesia"></div>
                             </div>
-                            <div class="identity5">
+                            <div class="identity">
                                 <div class="identity-filling">Birthday Date</div>
                                 <div class="Username-identity">24/10/2000
                                 <div class="btn-edit">Edit</div>
@@ -203,6 +193,6 @@
             <div class="footer-text-title"><p>© 2020 Wetick All Rights Reserved</p></div>
             </div>
         </footer>
-    </div>
+        <script src="./assets/javascript/script.js"></script>
     </body>
         </html>
