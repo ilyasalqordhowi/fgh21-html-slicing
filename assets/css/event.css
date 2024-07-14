@@ -390,6 +390,7 @@ body {
   }
 
   .navigasi .profile {
+    display: flex;
   }
 
   .all-navbar {

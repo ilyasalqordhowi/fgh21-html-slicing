@@ -4,7 +4,7 @@ const menuBtn = document.getElementById("menu-button");
 const nav = document.getElementById("nav");
 const navCenter = nav.getElementsByClassName("list-link").item(0);
 const navRight = nav.getElementsByClassName("nav-button").item(0);
-const profile = nav.getElementsByClassName("profile").item(0);
+const profile = nav.getElementByClassName("profile").item(0);
 menuBtn.onclick = () => {
   if (navCenter.getAttribute("style")) {
     navCenter.removeAttribute("style");
@@ -21,19 +21,6 @@ menuBtn.onclick = () => {
   } else {
     profile.setAttribute("style", "display:none;");
   }
-};
-// button singup
-const btnToSingIn = document.getElementById("to-Login");
-btnToSingIn.onclick = () => {
-  window.location = "/sing-in.html";
-};
-const btnToSingUp = document.getElementById("to-singup");
-btnToSingUp.onclick = () => {
-  window.location = "/sing-up.html";
-};
-const createEvent = document.getElementById("create-event");
-createEvent.onclick = () => {
-  window.location = "/v1-my-booking.html";
 };
 // event home
 
