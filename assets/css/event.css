@@ -390,7 +390,7 @@ body {
   }
 
   .navigasi .profile {
-    display: none !important;
+    display: !important;
   }
 
   .all-navbar {
