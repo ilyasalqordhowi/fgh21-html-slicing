@@ -1,9 +1,9 @@
-const btnToSingIn = document.getElementById("to-Login");
-btnToSingIn.onclick = () => {
+const btnToSignIn = document.getElementById("to-Login");
+btnToSignIn.onclick = () => {
   window.location = "/sing-in.html";
 };
-const btnToSingUp = document.getElementById("to-singup");
-btnToSingUp.onclick = () => {
+const btnToSignUp = document.getElementById("to-singup");
+btnToSignUp.onclick = () => {
   window.location = "/sing-up.html";
 };
 const createEvent = document.getElementById("create-event");
